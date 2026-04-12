@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 120 20% 99%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 142 72% 29%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 138 76% 94%;
+    --secondary-foreground: 142 72% 29%;
+
+    --muted: 120 20% 96%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 130 40% 96%;
+    --accent-foreground: 142 72% 29%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 20% 92%;
+    --input: 140 15% 90%;
+    --ring: 142 72% 29%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 15% 30%;
+    --sidebar-primary: 142 72% 29%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 138 76% 94%;
+    --sidebar-accent-foreground: 142 72% 29%;
+    --sidebar-border: 140 20% 93%;
+    --sidebar-ring: 142 72% 29%;
+
+    --green-50: 120 60% 98%;
+    --green-100: 138 76% 94%;
+    --green-500: 142 72% 29%;
+    --green-600: 142 76% 36%;
+  }
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 142 72% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 222 47% 15%;
+    --secondary-foreground: 142 72% 40%;
+
+    --muted: 222 47% 12%;
+    --muted-foreground: 215 14% 65%;
+
+    --accent: 222 47% 14%;
+    --accent-foreground: 142 72% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 19% 27%;
+    --input: 217 19% 27%;
+    --ring: 142 72% 40%;
+
+    --green-50: 222 47% 10%;
+    --green-100: 222 47% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border transition-colors duration-200;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased transition-colors duration-200;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
